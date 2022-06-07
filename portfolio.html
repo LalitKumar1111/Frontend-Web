@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+    <title>Graphics Design and Web Developement</title>
+    <style>
+        /*Home Page*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        .navigation-wrap{
+            position: fixed;
+            width: 100%;
+            left: 0;
+            z-index: 1000;
+            -webkit-transition:all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+        .navigation-wrap.scroll-on{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0);
+            transition: all .15s ease-in-out 0s;
+
+        }
+        .navigation-wrap .navitem{
+            padding: 0 0.625rem;
+            transition: all 200ms linear;
+        }
+        .navbar-toggler:focus{
+            outline: unset;
+            border: unset;
+            box-shadow: none;
+        }
+        .lin{
+            font-size: 0.9375rem;
+            text-align: center;
+            color: rgb(6, 47, 53);
+            letter-spacing: 1px;
+        }
+        .lin:hover{
+            background-color: rgb(223, 139, 223);
+            color:white;
+        }
+        .counter-section{
+            background-color: rgb(223, 139, 223);
+            padding-top: 1%;
+            padding-bottom: 0.3%;
+            height: 10%;
+        }
+        .pa{
+            
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: larger;
+            text-align: center;
+            color: rgb(7, 59, 59);
+        }
+        .foot{
+          background-color: rgb(3, 28, 32);
+          width: 1263px;
+          height: 200px;
+          margin-top: 20px;
+          margin-left: -86px;
+        }
+        .add1{
+          color: rgb(6, 77, 77);
+          margin-top: 35px;
+          margin-left: 40px;
+        }
+        .add2{
+          color: rgb(6, 77, 77);
+          margin-top: 75px;
+        }
+        .iccn{
+          color: rgb(6, 77, 77);
+          margin-top: 35px;
+          margin-left: -40px;
+        }
+        .ic1{
+          color:rgb(6, 77, 77) ;
+        }
+        .ic1:hover{
+          color: violet;
+        }
+        .ic{
+          color: grey;
+        }
+        .ic:hover{
+          color: blueviolet;
+        }
+        .copy{
+          background-color: rgb(1, 19, 22);
+          color: rgb(2, 42, 49);
+          margin-top: 45px;
+        }
+        /*Poster*/
+        .pohd{
+          margin-top: 20px;
+          margin-bottom: 20px;
+          font-size: 50px;
+          color: #E67D94;
+          font-weight: bold;
+          font-family: 'Grenze Gotisch', cursive;
+        }
+        .padd{
+          margin-top: 10px;
+        }
+        /*ad-video*/
+        .ad{
+          border-color:rgb(4, 51, 59) ;
+          border-width: 3px;
+          border-style: solid;
+        }
+    </style>
+  </head>
+  <body>
+    <!--Navbar Section-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navigation-wrap">
+            <div class="container">
+                <img src="media/logo.png" width="35" height="30" alt="">
+              <a class="navbar-brand" href="#" style="font-size: 22px;"><b>BLACKBOX DESIGN</b></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <div class="navbar-nav ms-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item lin">
+                          <a class="nav-link" aria-current="page" href="home.html"><div class="lin"><b>HOME</b></div></a>
+                        </li>
+                        <li class="nav-item lin">
+                          <a class="nav-link" href="portfolio.html"><div class="lin"><b>PORTFOLIO</b></div></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lin" href="about.html"><div class="lin"><b>ABOUT US</b></div></a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link lin" href="contact.html"><div class="lin"><b>CONTACT</b></div></a>
+                        </li>
+                      </ul>
+                  </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!--Image-->
+    <div>
+      <img src="media/portfolio/1.jpg" class="img-fluid" alt="image">
+  </div>
+  <!--Poster-->
+  <section class="col-12 text-center pohd">POSTER DESIGN</section>
+  <section class="container">
+    <div class="row">
+      <div class="col-4">
+        <div>
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="media/portfolio/p1.png" class="d-block w-100" height="290" alt="image">
+              </div>
+              <div class="carousel-item">
+                <img src="media/portfolio/p12.png" class="d-block w-100" height="290" alt="image">
+              </div>
+              <div class="carousel-item">
+                <img src="media/portfolio/p13.png" class="d-block w-100" height="290" alt="image">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+        <div><div id="carouselExampleFade" class="carousel slide carousel-fade padd" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="media/portfolio/p2.png" class="d-block w-100" height="290" alt="image">
+            </div>
+            <div class="carousel-item">
+              <img src="media/portfolio/p21.png" class="d-block w-100" height="290" alt="image">
+            </div>
+            <div class="carousel-item">
+              <img src="media/portfolio/p22.png" class="d-block w-100" height="290" alt="image">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+    </div>
+      </div>
+      <div class="col-4">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="media/portfolio/p3.png" class="d-block w-100" height="590" alt="image">
+            </div>
+            <div class="carousel-item">
+              <img src="media/portfolio/p31.png" class="d-block w-100" height="590" alt="image">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+      </div>
+      <div class="col-4">
+        <div>
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="media/portfolio/p4.png" class="d-block w-100" height="290" alt="image">
+              </div>
+              <div class="carousel-item">
+                <img src="media/portfolio/p42.png" class="d-block w-100" height="290" alt="image">
+              </div>
+              <div class="carousel-item">
+                <img src="media/portfolio/p43.png" class="d-block w-100" height="290" alt="image">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+        <div><div id="carouselExampleFade" class="carousel slide carousel-fade padd" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="media/portfolio/p51.png" class="d-block w-100" height="290" alt="image">
+            </div>
+            <div class="carousel-item">
+              <img src="media/portfolio/p5.png" class="d-block w-100" height="290" alt="image">
+            </div>
+            <div class="carousel-item">
+              <img src="media/portfolio/p52.png" class="d-block w-100" height="290" alt="image">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+    </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Ad-video-->
+  <section class="col-12 text-center pohd">AD-VIDEO</section>
+  <section class="container">
+  <section class="container">
+    <div class="row">
+      <div class="col-6 ad">
+        <video controls width="100%" height="300" autoplay loop  poster="media/portfolio/pv1.png">
+          <source src="media/portfolio/v1.mp4" type="video/mp4"/>
+          Video tag not supported
+      </video>
+      </div>
+      <div class="col-6 ad">
+        <video controls width="100%" height="300" autoplay loop  poster="media/portfolio/pv2.png">
+          <source src="media/portfolio/v2.mp4" type="video/mp4"/>
+          Video tag not supported
+      </video>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo foot ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3 col-md-3 col-sm-3 col-lg-3 add1">
+              West, Karave Nagar,<br/>Seawoods West, Kendriya Vihar,<br/>Sector 38, Seawoods,<br/> Mumbai, Maharashtra 400706<br/>Mob:121-121-1234
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6 col-6 text-center add2">
+              <p>“Design is not just what it looks like and feels like. <br/>
+                Design is how it works.”</p>
+            </div>
+            <div class="col-3 col-md-3 col-sm-3 col-lg-3 text-center iccn">
+                <a class="footer-link text-decoration-none ic1" href="#">Register</a>            
+                <a class="footer-link text-decoration-none ic1" href="#">Forum</a>           
+                <a class="footer-link text-decoration-none ic1" href="#">Affiliate</a>
+                <a class="footer-link text-decoration-none ic1" href="#"> FAQ</a>            
+                <div class="footer-social pt-4 text-center">           
+                <a href="#"><i class="fab fa-facebook-f ic"></i></a>            
+                <a href="#"><i class="fab fa-twitter ic"></i></a>            
+                <a href="#"><i class="fab fa-youtube ic"></i></a>            
+                <a href="#"><i class="fab fa-dribbble ic"></i></a> 
+                <a href="#"><i class="fab fa-linkedin ic"></i></a>            
+                <a href="#"><i class="fab fa-instagram ic"></i></a>
+                <a href="#"><i class="fab fa-google ic"></i></a> 
+                <div>@blackboxdesign</div>             
+            </div>
+                      
+        </div>
+        
+      </div>
+  
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 col-sm-12 col-lg-12 copy">Copyright &copy 2020 BBD: All Rights Reserved
+    </div>
+  </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
